@@ -1,4 +1,6 @@
+![Screenshot_20250618_203356_Samsung Notes](https://github.com/user-attachments/assets/5e62da3a-d612-43d8-9ab2-85e4c65be3d0)
 # Problem Statement
+
 
 Seeking Tutor Problem
 The computer science department runs a mentoring center (csmc) to help undergraduate students with their programming assignments. The lab has a coordinator and several tutors to assist the students. The waiting area of the center has several chairs. Initially, all the chairs are empty. The coordinator is waiting for the students to arrive. The tutors are either waiting for the coordinator to notify them that there are students waiting or they are busy tutoring. The tutoring area is separate from the waiting area.
@@ -20,6 +22,7 @@ Your program should work for any number of students, tutors, chairs and help sou
 
 
 Output
+
 Your program must output the following at appropriate times.
 Output of a student thread (x and y are ids):
 S: Student x takes a seat. Empty chairs = <# of empty chairs after student x took a seat>. S: Student x found no empty chair. Will try again later.
