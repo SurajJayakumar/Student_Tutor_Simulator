@@ -10,7 +10,7 @@ A student while programming for their project, decides to go to csmc to get help
 
 
 The priority of a student is based on the number of times the student has taken help from a tutor. A student visiting the center for the first time gets the highest priority. In general, a student visiting to take help for the ith time has a priority higher than the priority of the
-student visiting to take help for the kth time for any k > i. If two students have the same priority, then the student who came first has a higher priority. Using POSIX threads, mutex locks, and semaphores implement a solution that synchronizes the activities of the coordinator, tutors, and the students. The total number of students, the number of tutors, the number of chairs, and the number of times a student seeks a tutor’s help are passed as command line arguments as shown below (csmc is the name of the executable): csmc #students #tutors #chairs #help csmc 10 3 4 5 csmc 2000 10 20 4
+student visiting to take help for the kth time for any k > i. If two students have the same priority, then the student who came first has a higher priority. Using POSIX threads, mutex locks, and semaphores implement a solution that synchronizes the activities of the coordinator, tutors, and the students.
 
 
 
@@ -28,3 +28,10 @@ Output of the coordinator thread (x is the id, and p is the priority):
 C: Student x with priority p added to the queue. Waiting students now = <# students waiting>. Total requests = <total # requests (notifications sent) by students for tutoring so far>
 Output of a tutor thread after tutoring a student (x and y are ids):
 T: Student x tutored by Tutor y. Students tutored now = <# students receiving help now>. Total sessions tutored = <total no of tutoring sessions completed so far by all the tutors>
+
+
+
+# How To Run?
+
+1. Compile the code
+2. run the executable with arguments (students, tutors, chairs, number of helps each student needs). For example: csmc 10 3 4 5
